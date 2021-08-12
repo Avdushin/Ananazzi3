@@ -411,6 +411,9 @@ assign [class="Telegram|Discord"]						    → 7
 
 # USER APPLICATIONS TO START AT BOOT
 
+# noise torch (for Discord)
+exec --no-startup-id noisetorch 
+
 # ArcoLinux Welcome App
 exec --no-startup-id dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 
@@ -506,6 +509,7 @@ bindsym $mod+shift+Return exec /opt/sublime_text/sublime_text
 
 # blanket
 bindsym $mod+b exec flatpak run com.rafaelmardojai.Blanket
+
 
 
 #ArcoLinux Welcome App
