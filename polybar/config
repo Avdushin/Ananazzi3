@@ -1,4 +1,6 @@
 ;=====================================================
+;               ANANAZ - polybar config
+;=====================================================
 ;
 ;   To learn more about how to configure Polybar
 ;   go to https://github.com/jaagr/polybar
@@ -123,7 +125,7 @@ font-4 = "coins:style=Regular:size=8;0"
 
 modules-left = i3 xwindow  
 modules-center = 
-modules-right = xkeyboard2  memory2 cpu2 volume crypto date  wireless-network
+modules-right = xkeyboard2  memory2 cpu2 volume crypto date trash wireless-network
 
 separator = 
 
@@ -1334,6 +1336,21 @@ format-background = ${colors.background}
 format-prefix = "  "
 format-prefix-foreground = #FFBB00
 format-underline = #FFBB00
+
+[module/trash]
+type = custom/script
+interval = 1
+exec = ~/.config/polybar/trash
+format-prefix = "  "
+format-prefix-padding-left = 0
+format-prefix-padding-right = 0
+format-prefix-foreground = ${colors.foreground}
+label-padding = 0
+label-foreground = ${colors.foreground}
+click-left = rm -rf ~/.local/share/Trash/files/* ;exec notify-send 'Kôš vyprázdnený'
+#click-right = pcmanfm -n ~/.local/share/Trash/files
+format-background = 
+format-underline = #FF7676
 
 ################################################################################
 
