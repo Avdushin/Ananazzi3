@@ -1,4 +1,6 @@
 #####################################################################################################################
+#################                          ANANAZZ i3 CONFIG                                        #################      
+#####################################################################################################################
 #####################################################################################################################
 #################                          Start of all the settings                                #################
 #####################################################################################################################
@@ -18,7 +20,7 @@
 # Print = PRINT key
 # Tab = TAB key
 
-# keyboard layout
+# keyboard layout | the default is en,ru; u can add yours keyboard layout
 #exec --no-startup-id setxkbmap -model pc105 -layout us,ru -variant -option grp:alt_shift_toggle 
 
 
@@ -477,7 +479,7 @@ exec_always --no-startup-id numlockx on
 #exec --no-startup-id xfce4-clipman
 
 #Conky
-exec --no-startup-id conky -c ~/.config/i3/system-overview
+#exec --no-startup-id conky -c ~/.config/i3/system-overview
 
 #feh sets wallpaper
 exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arcolinux/sea-whale.jpg &
@@ -510,7 +512,8 @@ bindsym $mod+shift+Return exec /opt/sublime_text/sublime_text
 # blanket
 bindsym $mod+b exec flatpak run com.rafaelmardojai.Blanket
 
-
+# gcolor
+bindsym $mod+g exec gcolor2
 
 #ArcoLinux Welcome App
 bindsym control+mod1+w exec --no-startup-id arcolinux-welcome-app
@@ -519,9 +522,9 @@ bindsym control+mod1+w exec --no-startup-id arcolinux-welcome-app
 bindsym control+mod1+e exec --no-startup-id arcolinux-tweak-tool
 
 #conky
-bindsym $mod+c exec --no-startup-id conky-toggle
-bindsym control+mod1+Next exec --no-startup-id conky-rotate -n
-bindsym control+mod1+Prior exec --no-startup-id conky-rotate -p
+#bindsym $mod+c exec --no-startup-id conky-toggle
+#bindsym control+mod1+Next exec --no-startup-id conky-rotate -n
+#bindsym control+mod1+Prior exec --no-startup-id conky-rotate -p
 
 # discord
 bindsym $mod+shift+d exec discord
@@ -1011,23 +1014,9 @@ bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 
 
 #####################################################################################################################
-#################                          Scratchpad                                               #################
-#####################################################################################################################
-
-# NOT USED
-
-# move the currently focused window to the scratchpad
-# bindsym Mod1+Shift+minus move scratchpad
-
-# Show the next scratchpad window or hide the focused scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-# bindsym Mod1+minus scratchpad show
-
-#####################################################################################################################
 #################                          mouse settings in i3                                     #################
 #####################################################################################################################
 
-# NOT USED
 
 # mouse settings
 # The middle button over a titlebar kills the window
@@ -1049,7 +1038,6 @@ bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 #################                          keyboard control                                         #################
 #####################################################################################################################
 
-# NOT USED
 
 # Settings of arcolinux will be applied
 
@@ -1058,16 +1046,3 @@ exec --no-startup-id setxkbmap -model pc105 -layout us,ru -variant -option grp:a
 exec --no-startup-id setxkbmap ru
 exec --no-startup-id setxkbmap us
 
-#input {
-#       xkb_layout us,ru 
-#       xkb_options grp:alt_shift_toggle
-#}
-
-#####################################################################################################################
-#################                          unclutter                                                #################
-#####################################################################################################################
-
-# NOT USED
-
-# get the mouse out of the way with unclutter
-#exec --no-startup-id unclutter
