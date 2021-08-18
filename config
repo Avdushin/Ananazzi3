@@ -21,7 +21,7 @@
 # Tab = TAB key
 
 # keyboard layout | the default is en,ru; u can add yours keyboard layout
-#exec --no-startup-id setxkbmap -model pc105 -layout us,ru -variant -option grp:alt_shift_toggle 
+exec --no-startup-id setxkbmap -model pc105 -layout us,ru -variant -option grp:alt_shift_toggle 
 
 
 #####################################################################################################################
@@ -267,9 +267,6 @@ bindsym Mod1+Ctrl+Left workspace prev
 for_window [urgent=latest] focus
 
 
-
-
-
 #####################################################################################################################
 #################                          Tiling parameters                                        #################
 #####################################################################################################################
@@ -379,8 +376,9 @@ font pango:Noto Mono Regular 13
 # Workspace 3 Firefox
 assign [class="firefox"]                                                           → 3
 
-# Workspace 4 Gimp
-#assign [class="Gimp"]                                                               → 4
+# Workspace 4 freetube
+#assign [class="freetube"]                                                               → 4
+
 
 # Workspace 5 Images and meld
 #assign [class="ristretto|Ristretto|shotwell|Shotwell|Xviewer|Nitrogen"]             → 5
@@ -422,21 +420,21 @@ exec --no-startup-id dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 # Autotiling
 exec_always --no-startup-id autotiling
 
-#browser
+# browser
 #exec --no-startup-id vivaldi-stable
 for_window [class="Vivaldi-stable"] focus
 
-#text-editor
+# text-editor
 #exec --no-startup-id geany
 #exec --no-startup-id atom
 
-#file manager
+# file manager
 #exec --no-startup-id thunar
 
 #Mail clients
 #exec --no-startup-id evolution
 
-#Music
+# Music
 #exec --no-startup-id spotify
 for_window [class="Spotify"] focus
 
@@ -504,13 +502,13 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 #not workspace related
 
-# Старт программ
+# Старт ограмм
 
 # start sublime_text
-bindsym $mod+shift+Return exec /opt/sublime_text/sublime_text
+bindsym $mod+shift+Return exec /opt/sublime_text/sublime_text 
 
 # blanket
-bindsym $mod+b exec flatpak run com.rafaelmardojai.Blanket
+bindsym $mod+b exec flatpak run com.rafaelmardojai.Blanket 
 
 # gcolor
 bindsym $mod+g exec gcolor2
@@ -527,7 +525,13 @@ bindsym control+mod1+e exec --no-startup-id arcolinux-tweak-tool
 #bindsym control+mod1+Prior exec --no-startup-id conky-rotate -p
 
 # discord
-bindsym $mod+shift+d exec discord
+bindsym $mod+shift+d exec discord 
+
+# freetube
+bindsym $mod+y exec freetube 
+
+# gitkraken
+bindsym control+mod1+g exec gitkraken
 
 # terminal
 bindsym $mod+Return exec --no-startup-id termite;focus
@@ -547,7 +551,7 @@ bindsym control+Shift+Escape exec --no-startup-id xfce4-taskmanager;focus
 bindsym control+mod1+m exec --no-startup-id xfce4-settings-manager
 
 #catfish
-bindsym control+mod1+c exec --no-startup-id catfish;focus
+#bindsym control+mod1+c exec --no-startup-id catfish;focus
 
 #arcolinux-logout
 bindsym control+mod1+k exec --no-startup-id arcolinux-logout
@@ -585,7 +589,7 @@ bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser;focus
 bindsym $mod+w exec --no-startup-id exo-open --launch webbrowser;focus
 bindsym $mod+shift+f exec --no-startup-id firefox;focus
 bindsym control+mod1+v exec --no-startup-id vivaldi-stable;focus
-bindsym control+mod1+g exec --no-startup-id chromium;focus
+bindsym control+mod1+c exec --no-startup-id chromium;focus
 
 #workspace 2 related
 #bindsym $mod+F2 exec --no-startup-id geany;focus
@@ -595,7 +599,7 @@ bindsym $mod+F2 exec --no-startup-id atom;focus
 bindsym $mod+F3 exec --no-startup-id inkscape;focus
 
 #workspace 4 related
-bindsym $mod+F4 exec --no-startup-id gimp;focus
+bindsym $mod+shift+y exec --no-startup-id freetube;focus
 
 #workspace 5 related
 bindsym $mod+F5 exec --no-startup-id meld;focus
@@ -797,7 +801,7 @@ bindsym $mod+shift+b exec --no-startup-id i3-msg border toggle
 #changing border style
 #super+t in arcolinux is starting terminal
 #bindsym $mod+t border normal
-bindsym $mod+y border 1pixel
+#bindsym $mod+y border 1pixel
 bindsym $mod+u border none
 
 
@@ -1041,8 +1045,8 @@ bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
 
 # Settings of arcolinux will be applied
 
-exec --no-startup-id setxkbmap -model pc105 -layout us,ru -variant -option grp:alt_shift_toggle 
+#exec --no-startup-id setxkbmap -model pc105 -layout us,ru -variant -option grp:alt_shift_toggle 
 
-exec --no-startup-id setxkbmap ru
-exec --no-startup-id setxkbmap us
+#exec --no-startup-id setxkbmap ru
+#exec --no-startup-id setxkbmap us
 
