@@ -1,5 +1,5 @@
 ;=====================================================
-;               ANANAZ - polybar config
+;               ANANAZ - polybar config 			 ;
 ;=====================================================
 ;
 ;   To learn more about how to configure Polybar
@@ -33,7 +33,7 @@ compositing-border = over
 format-foreground = #FF0000
 format-background = #00FF00
 ;format-underline = #40AD4B
-format-underline = #3EC13F # here u can turn off volume's module (and other) underline
+format-underline = #3EC13F
 format-overline =
 format-spacing =
 format-padding =
@@ -125,7 +125,7 @@ font-4 = "coins:style=Regular:size=8;0"
 
 modules-left = i3 xwindow  
 modules-center = 
-modules-right = xkeyboard2  memory2 cpu2 volume crypto date trash wireless-network
+modules-right =  cpu2 memory2 volume crypto  date xkeyboard2  trash wireless-network
 
 separator = 
 
@@ -1506,7 +1506,7 @@ type = internal/cpu
 interval = 1
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
+format-prefix = ""
 format-prefix-foreground = #cd1f3f
 format-underline = #cd1f3f
 
@@ -1525,7 +1525,7 @@ format-padding = 2
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = Cpu %percentage:3%%
+label = %percentage:3%%
 
 
 ################################################################################
@@ -1550,7 +1550,7 @@ type = internal/date
 interval = 1
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = " %Y-%m-%d "
+date = " %d-%m-%Y "
 date-alt = " %d-%m-%Y"
 time = %H:%M:%S
 time-alt = %H:%M
@@ -1763,7 +1763,7 @@ interval = 1
 ;   %mb_total%
 label = %percentage_used%%
 
-format = Mem <label>
+format = <label>
 format-prefix = "  "
 format-prefix-foreground = #3384d0
 format-underline = #3384d0
