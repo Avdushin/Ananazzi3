@@ -1,12 +1,11 @@
 ;=====================================================
-;               ANANAZ - polybar config 			 ;
+;               ANANAZ - polybar config 			       ;
 ;=====================================================
-;													 ;
-;			Here is Ananazz's polybar config         ;
-;													 ;
-;						Version 1.0 			     ;
-;													 ;
-;													 ;
+;													                           ;
+;			Here is Ananazz's polybar config               ;
+;													                           ;
+;						    Version 1.0 			                   ;
+;                                                    ;
 ;============================ 2021 ===================
 
 [global/wm]
