@@ -1,5 +1,15 @@
 # Ananazz i3 configuration
 
+[Rus] Что бы все модули Polybar работали корректно установите шрифт: 
+
+Копируйте шрифт coins.otf в путь 
+` ~/.fonts/coins.otf `
+
+[En] For all Polybar modules to work, install the font correctly:
+Copy font coin.otf
+ ` ~/.fonts/coins.otf`
+
+
 ### Here is my i3 configuration.
 
 
