@@ -1,6 +1,9 @@
 # Preview bar themes
 
 
+How to install bin: 
+sudo mkdir /.local/share/Trash/
+
 Nord theme :
 ![изображение](https://cdn.discordapp.com/attachments/754416547203907604/881204878775582730/unknown.png)
 
