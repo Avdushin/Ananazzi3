@@ -5,9 +5,13 @@ Copy font coin.otf
  ` ~/.fonts/coins.otf`
  
  Use your packet manager to download font-awesome.
+ 
  Arch - `sudo pacman -S font-awesome-4 font-awesome-ttf -y `
+ 
  Debian, Ubuntu - `sudo apt-get install font-awesome-4 font-awesome-ttf -y `
+ 
  Fedora - `sudo dnf install font-awesome-4 font-awesome-ttf -y `
+ 
  Solus - `sudo eopkg it font-awesome-4 font-awesome-ttf -y `
  
 
